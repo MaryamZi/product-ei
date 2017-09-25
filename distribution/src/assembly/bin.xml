@@ -1160,6 +1160,18 @@
             </includes>
         </fileSet>
 
+        <!--dbscripts for Quartz task coordination-->
+        <fileSet>
+            <directory>
+                ../p2-profile/ei-profile/target/wso2carbon-core-${carbon.kernel.version}/dbscripts/task
+            </directory>
+            <outputDirectory>wso2ei-${pom.version}/dbscripts/task</outputDirectory>
+            <includes>
+                <include>p2.inf</include>
+                <include>**/**.sql</include>
+            </includes>
+        </fileSet>
+
         <fileSet>
             <directory>../components/org.wso2.ei.styles/src/main/resources/web/styles/css
             </directory>
